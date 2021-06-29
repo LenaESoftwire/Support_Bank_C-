@@ -20,7 +20,6 @@ namespace Support_Bank_C_
                 }
             }
         }
-
         public UserAccount (string name)
         {
             Name = name;
