@@ -1,0 +1,16 @@
+C:\Users\eleevd\Training\Support_Bank_C#\bin\Debug\net5.0\Support_Bank_C#.exe
+C:\Users\eleevd\Training\Support_Bank_C#\bin\Debug\net5.0\Support_Bank_C#.deps.json
+C:\Users\eleevd\Training\Support_Bank_C#\bin\Debug\net5.0\Support_Bank_C#.runtimeconfig.json
+C:\Users\eleevd\Training\Support_Bank_C#\bin\Debug\net5.0\Support_Bank_C#.runtimeconfig.dev.json
+C:\Users\eleevd\Training\Support_Bank_C#\bin\Debug\net5.0\Support_Bank_C#.dll
+C:\Users\eleevd\Training\Support_Bank_C#\bin\Debug\net5.0\ref\Support_Bank_C#.dll
+C:\Users\eleevd\Training\Support_Bank_C#\bin\Debug\net5.0\Support_Bank_C#.pdb
+C:\Users\eleevd\Training\Support_Bank_C#\obj\Debug\net5.0\Support_Bank_C#.csproj.AssemblyReference.cache
+C:\Users\eleevd\Training\Support_Bank_C#\obj\Debug\net5.0\Support_Bank_C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eleevd\Training\Support_Bank_C#\obj\Debug\net5.0\Support_Bank_C#.AssemblyInfoInputs.cache
+C:\Users\eleevd\Training\Support_Bank_C#\obj\Debug\net5.0\Support_Bank_C#.AssemblyInfo.cs
+C:\Users\eleevd\Training\Support_Bank_C#\obj\Debug\net5.0\Support_Bank_C#.csproj.CoreCompileInputs.cache
+C:\Users\eleevd\Training\Support_Bank_C#\obj\Debug\net5.0\Support_Bank_C#.dll
+C:\Users\eleevd\Training\Support_Bank_C#\obj\Debug\net5.0\ref\Support_Bank_C#.dll
+C:\Users\eleevd\Training\Support_Bank_C#\obj\Debug\net5.0\Support_Bank_C#.pdb
+C:\Users\eleevd\Training\Support_Bank_C#\obj\Debug\net5.0\Support_Bank_C#.genruntimeconfig.cache
