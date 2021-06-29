@@ -10,6 +10,10 @@ namespace Support_Bank_C_
         public string Narrative {get; set;}
         public decimal Amount {get; set;}
 
+        public void PrintTransaction()
+        {
+            Console.WriteLine($"{Date} from {From} To {To} Narrative {Narrative} Amount {Amount}");
+        }
         public Transaction(string[] columns)
         {
             Date = columns[0];

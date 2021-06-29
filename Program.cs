@@ -1,13 +1,14 @@
 ﻿using System.Transactions;
 using System.Collections.Generic;
-using System;
 using System.IO;
 using System.Linq;
+using System;
 
 namespace Support_Bank_C_
 {
     class Program
     {
+         
         static void Main()
         {
             var bank = new Bank();
@@ -16,7 +17,6 @@ namespace Support_Bank_C_
             lines = lines.Skip(1).ToArray();
             bank.Transactions = lines.Select(line => new Transaction(line.Split(','))).ToList();
 
-            // Console.WriteLine(bank.Transactions[0].Date + " " + bank.Transactions[0].Amount);
             var userNames = new List<string>();
             foreach (var transaction in bank.Transactions)
             {
@@ -36,8 +36,21 @@ namespace Support_Bank_C_
                 var user = new UserAccount(username);
                 bank.Users.Add(user);
                 user.CountDebtLend(bank);
-                Console.WriteLine(user.Name + " debt " + user.Debt + " lend " + user.Lend);
             }
-        }
+
+            Console.Write("Which report would you like to call? 1) List All 2) User's transactions  :");
+            var userInput = Console.ReadLine();
+            if (userInput == "1")
+            {
+                bank.ListAll();
+            }
+           if (userInput == "2")
+            {
+                Console.Write("Please input username: ");
+                var username = Console.ReadLine();
+                bank.ListAccount(username);
+            }
+
+        }  
     }
 }
