@@ -15,7 +15,31 @@ namespace Support_Bank_C_
             var lines = File.ReadAllLines(path);
             lines = lines.Skip(1).ToArray();
             bank.Transactions = lines.Select(line => new Transaction(line.Split(','))).ToList();
-            Console.WriteLine(bank.Transactions[0].To + " " + bank.Transactions[0].Amount);
+
+
+            // Console.WriteLine(bank.Transactions[0].Date + " " + bank.Transactions[0].Amount);
+            var userNames = new List<string>();
+            foreach (var transaction in bank.Transactions)
+            {
+                if (!userNames.Contains(transaction.To))
+                {
+                    userNames.Add(transaction.To);
+                }
+
+                if (!userNames.Contains(transaction.From))
+                {
+                    userNames.Add(transaction.From);
+                }
+            }
+
+            bank.Users = new List<UserAccount>();
+            foreach (var username in userNames)
+            {
+                var user = new UserAccount(username);
+                bank.Users.Add(user);
+                user.CountDebtLend(bank);
+                Console.WriteLine(user.Name + " debt " + user.Debt + " lend " + user.Lend);
+            }
         }
     }
 }

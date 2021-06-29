@@ -7,4 +7,5 @@ namespace Support_Bank_C_
         public List<Transaction> Transactions { get; set; }
         public List<UserAccount> Users { get; set; }
     }
+ 
 }

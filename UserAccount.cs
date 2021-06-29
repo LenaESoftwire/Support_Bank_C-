@@ -2,27 +2,28 @@ namespace Support_Bank_C_
 {
     public class UserAccount
     {
-        public string Name;
+        public string Name {get; set;}
+        public decimal Debt {get; set;}
+        public decimal Lend {get; set;}
 
-        public void CountDebt()
+        public void CountDebtLend(Bank bank)
         {
-            // var debt = 0.00;
+            foreach (var transaction in bank.Transactions)
+            {
+               
+                if (Name == transaction.To) {
+                     Debt += transaction.Amount;
+                }
 
-            // foreach (var transaction in debtTransactions)
-            // {
-            //     debt = +transaction.Amount;
-            // }
+                if (Name == transaction.From) {
+                     Lend += transaction.Amount;
+                }
+            }
         }
 
-        public void CountLend()
+        public UserAccount (string name)
         {
-            // var lend = 0.00;
-            // foreach (var transaction in lendTransactions)
-            // {
-            //     lend = +transaction.Amount;
-            // }
+            Name = name;
         }
-
-
     }
 }
